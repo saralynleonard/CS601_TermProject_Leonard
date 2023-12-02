@@ -20,7 +20,7 @@ function buildEducationList(data) {
         <ul id="education">    
             <li><strong>${degree.type} in ${degree.program} | ${degree.school}</strong></li>
             <li><i class="material-icons">calendar_month</i> ${degree.attended}</li>
-            <li><i class="material-icons">room</i>${degree.location}</li>
+            <li><i class="material-icons">room</i> ${degree.location}</li>
         </ul>
         </div>`
     })

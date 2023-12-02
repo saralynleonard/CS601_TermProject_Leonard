@@ -1,0 +1,19 @@
+#experience {
+    list-style-type: none;
+    box-shadow: black 10px 10px 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    font-size: 1.15rem;
+}
+
+#experience_task {
+    list-style-type:disc;
+    margin-left: 27px;
+}
+
+.material-icons {
+    color: #a8dadc;
+}

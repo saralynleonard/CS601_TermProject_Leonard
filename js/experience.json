@@ -1,0 +1,67 @@
+[
+    {
+        "experience": {
+        "position": "SharePoint Developer",
+        "organization": "Precise Systems, inc.",
+        "date_range": "August 2021 - Present", 
+        "location": "Patuxent River, MD",
+        "task1": "Utilized SharePoint Online and Power Automate to create electronic employee check-in workflow, reducing average processing time from two weeks to one day",
+        "task2": "Utilized SharePoint Online and Power Automate to create electronic travel request workflow, reducing processing time from one month to one day", 
+        "task3": "Utilized SharePoint Online and Power Platform to automate conference room booking process",
+        "task4": "Utilized Power Apps to create merchandise ordering process", 
+        "task5": "Perform routine workflow and form maintenance to ensure all processes housed in SPO function properly and efficiently"
+        }
+    },
+    {
+        "experience": {
+        "position": "Office Automation Assistant",
+        "organization": "Naval Hospital Jacksonville",
+        "date_range": "January 2021 - June 2021", 
+        "location": "Jacksonville, FL",
+        "task1": "Developed and managed SharePoint workflow system for routing documents throughout the command, eliminating document backlog", 
+        "task2": "Utilized Microsoft Access to design and maintain Patient Safety Award database ", 
+        "task3": "Managed department dashboards to identify and track patient safety trends", 
+        "task4": "Established and maintained department SharePoint pages and content", 
+        "task5": "Organized and formatted data for efficient query and storage processes"
+        }
+    },
+    {
+        "experience": {
+        "position": "Front Office Coordinator",
+        "organization": "Clay Surgery Center",
+        "date_range": "February 2019 - December 2020", 
+        "location": "Orange Park, FL", 
+        "task1": "", 
+        "task2": "", 
+        "task3": "", 
+        "task4": "", 
+        "task5": ""
+        }
+    }, 
+    {
+        "experience": {
+        "position": "Client Services Manager",
+        "organization": "Vesta Property Services",
+        "date_range": "April 2018 - January 2019", 
+        "location": "Jacksonville, FL", 
+        "task1": "", 
+        "task2": "", 
+        "task3": "", 
+        "task4": "", 
+        "task5": ""
+        }
+    }, 
+    {
+        "experience": {
+        "position": "Front Desk Assistant",
+        "organization": "Statesboro Ear, Nose, and Throat",
+        "date_range": "January 2012 - May 2016", 
+        "location": "Statesboro, GA", 
+        "task1": "", 
+        "task2": "", 
+        "task3": "", 
+        "task4": "", 
+        "task5": ""
+        }
+    }
+]
