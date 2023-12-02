@@ -22,6 +22,9 @@ function buildExperienceList(data) {
             <li><i class="material-icons">calendar_month</i> ${experience.date_range}</li>
             <li><i class="material-icons">room</i> ${experience.location}</li>
             <li id="experience_task">${experience.task1}</li>
+            <li id="experience_task">${experience.task2}</li>
+            <li id="experience_task">${experience.task3}</li>
+            <li id="experience_task">${experience.task4}</li>
         </ul>
         </div>`
     })

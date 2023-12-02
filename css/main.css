@@ -205,3 +205,8 @@ footer {
     color:#1d3557;
 }
 
+#footer-icons i:hover {
+    color: #a8dadc;
+    transition: .1s ease-in-out;
+}
+
