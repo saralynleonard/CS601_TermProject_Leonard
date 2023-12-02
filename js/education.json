@@ -1,18 +1,20 @@
 [
     {
         "degree": {
-        "school": "Georgia Southern University",
-        "program": "Management Information Systems", 
-        "type": "BA", 
-        "year_conferred": "2016"
+        "school": "Boston University Metropolitan College",
+        "program": "Computer Information Systems",
+        "type": "Master of Science", 
+        "attended": "January 2023 - Present",
+        "location": "Online"
         }
     },
     {
         "degree": {
-        "school": "Boston University Metropolitan College",
-        "program": "Computer Information Systems",
-        "type": "MS", 
-        "year_conferred": "2026"
+        "school": "Georgia Southern University",
+        "program": "Management Information Systems", 
+        "type": "Bachelor of General Studies", 
+        "attended": "August 2011 - May 2016",
+        "location": "Statesboro, GA"
         }
     }
 ]
