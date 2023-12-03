@@ -16,6 +16,7 @@ fetchExperience();
 function buildExperienceList(data) {
     const experienceList = data.map(item => {
         const experience = item.experience;
+
         return `<div id="experienceOutput">
         <ul id="experience">    
             <li><strong>${experience.position} | ${experience.organization}</strong></li>
@@ -29,4 +30,5 @@ function buildExperienceList(data) {
         </div>`
     })
     return `${experienceList.join('')}`;
+    
 }
