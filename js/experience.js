@@ -1,4 +1,4 @@
-const url = "/js/experience.json";
+const url = "CS601_TermProject_Leonard/js/experience.json";
 
 async function fetchExperience() {
     try {
