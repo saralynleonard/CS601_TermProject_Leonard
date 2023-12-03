@@ -19,6 +19,9 @@ function createNavigation() {
         <a href="./projects.html">Projects</a>
     </li>
     <li class="nav-item">
+        <a href="./gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
         <a href="./contact.html">Contact</a>
     </li>
 </ul>`
