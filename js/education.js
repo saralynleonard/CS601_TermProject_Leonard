@@ -1,4 +1,4 @@
-const url = '/CS_TermProject_Leonard/js/education.json'
+const url = 'https://saralynleonard.github.io/CS601_TermProject_Leonard/education.json'
 
 async function fetchEducation() {
     try {
