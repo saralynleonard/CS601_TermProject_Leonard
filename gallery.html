@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js" integrity="sha512-jUvo4wLmasBQ4VBRwG9qkfOP/6GkSepADybOv52QFmqEYQlPx8ihGINjxQkiaH+ygvkI0XI2dMSvPs2BcFL5Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/projects.js"></script>
+    <script src="./js/gallery.js" type="module"></script>
     <script src="./js/main.js" defer></script>
 </head>
 <body>
@@ -22,21 +22,19 @@
         <nav id="nav-main"></nav>
     </header>
     <main>
-        <div id="app"></div>
-
-        <section id="image_gallery">
-            <img id="gallery_image" src="./images/rainbow_falls.PNG" alt="rainbow falls">
-            
-            <img id="gallery_image" src="./images/scotland.png" alt="loch ness">
-
-            <img id="gallery_image" src="./images/ranunculus_resized.png" alt="ranunculus flowers">
-
-            <img id="gallery_image" src="./images/hawaii_wall.png" alt="hawaii rock wall">
-
-            <img id="gallery_image" src="./images/mauna_kea.png" alt="mauna kea summit">
-
-            <img id="gallery_image" src="./images/highland_cows.PNG" alt="highland cows">
-        </section>
+        <div id="app">
+            <h3>These are some of my favorite images:</h3>
+            <section :key="galleryIndex" id="carousel">
+                <img :src="currentGalleryImage.image" alt="" />
+                <p>{{currentGalleryImage.text}}</p>
+            </section>
+            <button @click="previousImage" :disabled="galleryIndex === 0" id="prev-btn">
+                <i class="fa-regular fa-chevron-left"></i>
+            </button>
+            <button @click="nextImage" :disabled="galleryIndex === gallery.length -1">
+                <i class="fa-regular fa-chevron-right"></i>
+            </button>
+        </div>
     </main>
     <footer id="footer-main"></footer>
 </body>
