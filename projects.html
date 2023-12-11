@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/29da9f6bf5.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.11/vue.global.min.js" integrity="sha512-jUvo4wLmasBQ4VBRwG9qkfOP/6GkSepADybOv52QFmqEYQlPx8ihGINjxQkiaH+ygvkI0XI2dMSvPs2BcFL5Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="./js/projects.js" defer></script>
     <script src="./js/main.js" defer></script>
-    <script src="./js/projects.js"></script>
 </head>
 <body>
     <header>
         <h1>Projects</h1>
         <nav id="nav-main"></nav>
     </header>
-    <div id="app"></div>
+    <div id="app">
+        <section id="carousel">
+            <div v-for="(project, index) in projects" :key="index" id="project-item" :style="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }">
+                <h2>{{ project.project_title }}</h2>
+                <p>{{ project.description }}</p>
+                <p>{{ project.url }}</p>
+            </div>
+        </section>
+        <button @click="previousProject" :disabled="currentIndex === 0">
+            <i class="fa-regular fa-chevron-left"></i>
+        </button>
+        <button @click="nextProject" :disabled="currentIndex === projects.length - 1">
+            <i class="fa-regular fa-chevron-right"></i>
+        </button>
+    </div>
     <footer id="footer-main"></footer>
 </body>
 </html>

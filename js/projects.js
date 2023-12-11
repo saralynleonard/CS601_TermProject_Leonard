@@ -11,10 +11,12 @@ const app = Vue.createApp({
     },
     methods: {
         nextProject() {
-            this.currentIndex = (this.currentIndex +1)
+            this.currentIndex = (this.currentIndex + 1)
+            console.log(this.currentIndex)
         },
         previousProject() {
-            this.currentIndex = (this.currentIndex - 1 + this.projects.length)
+            this.currentIndex = (this.currentIndex - 1)
+            console.log(this.currentIndex)
         }
     },
     computed: {
