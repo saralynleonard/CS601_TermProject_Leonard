@@ -1,29 +1,29 @@
-const app = Vue.createApp({
-    data(){
-        return {
-            projects: [
-                {project_title: 'Simple Form Validation', description: 'Built using HTML, CSS, and JavaScript.', url: 'file:///C:/Users/Saralyn/Desktop/Boston%20University/MET_CS_601/Week%204/CS601_HW4_Leonard/index.html'},
-                {project_title: 'JSON and Fetch', description: 'Built using HTML, CSS, and JavaScript.', url: 'https://saralynleonard.github.io/CS601_HW5_Leonard/'},
-                {project_title: 'Personal Website', description: 'An old personal website built using HTML and CSS.', url: 'https://saralynleonard.com/'}
-            ],
-            currentIndex: 0
-        }
-    },
-    methods: {
-        nextProject() {
-            this.currentIndex = (this.currentIndex + 1)
-            console.log(this.currentIndex)
-        },
-        previousProject() {
-            this.currentIndex = (this.currentIndex - 1)
-            console.log(this.currentIndex)
-        }
-    },
-    computed: {
-        currentProject() {
-            return this.projects[this.currentIndex]
-        }
-    }
-})
+const url = "http://127.0.0.1:5500/js/projects.json";
 
-app.mount('#app')
+async function fetchProjects() {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();const projectsOutput = document.getElementById('projectsOutput');
+        projectsOutput.innerHTML = buildProjectList(data);
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+fetchProjects();
+
+function buildProjectList(data) {
+    const projectList = data.map(item => {
+        const project = item.project;
+
+        return `<div id="projectOutput">
+        <ul id="project">
+            <a href="${project.url}"><li><strong>${project.title}</strong></li>
+            <li>${project.description}</li>
+        </ul>
+        </a>
+        </div>
+        `
+    })
+    return `${projectList.join('')}`
+}

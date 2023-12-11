@@ -1,0 +1,24 @@
+[
+    {
+        "project": {
+            "title": "Simple Form Validation",
+            "description": "Built using HTML, CSS, and JavaScript.",
+            "url": "file:///C:/Users/Saralyn/Desktop/Boston%20University/MET_CS_601/Week%204/CS601_HW4_Leonard/index.html"
+        }
+        
+    },
+    {
+        "project": {
+            "title": "Personal Website",
+            "description": "An old personal resume website built using HTML and CSS.",
+            "url": "https://saralynleonard.com/"
+        }
+    },
+    {
+        "project": {
+            "title": "JSON and Fetch",
+            "description": "Built using HTML, CSS, and JavaScript.",
+            "url": "https://saralynleonard.github.io/CS601_HW5_Leonard/"
+        }
+    }
+]

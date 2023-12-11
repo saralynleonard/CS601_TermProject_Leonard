@@ -19,21 +19,9 @@
         <h1>Projects</h1>
         <nav id="nav-main"></nav>
     </header>
-    <div id="app">
-        <section id="carousel">
-            <div v-for="(project, index) in projects" :key="index" id="project-item" :style="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }">
-                <h2>{{ project.project_title }}</h2>
-                <p>{{ project.description }}</p>
-                <p>{{ project.url }}</p>
-            </div>
-        </section>
-        <button @click="previousProject" :disabled="currentIndex === 0">
-            <i class="fa-regular fa-chevron-left"></i>
-        </button>
-        <button @click="nextProject" :disabled="currentIndex === projects.length - 1">
-            <i class="fa-regular fa-chevron-right"></i>
-        </button>
-    </div>
+    <main>
+        <div id="projectsOutput"></div>
+    </main>
     <footer id="footer-main"></footer>
 </body>
 </html>
