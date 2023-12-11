@@ -1,4 +1,4 @@
-const url = "http://127.0.0.1:5500/js/projects.json";
+const url = "https://saralynleonard.github.io/CS601_TermProject_Leonard/js/projects.json";
 
 async function fetchProjects() {
     try {
