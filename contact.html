@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/29da9f6bf5.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="./js/main.js" defer></script>
+    <script src="./js/contact.js"></script>
 </head>
 <body>
     <header>
@@ -19,14 +21,21 @@
 
     </header>
     <main>
-        <form action="#" method="post">
+        <form action="#" method="post" novalidate onsubmit="return validateForm()">
             <label for="name">Name: </label>
             <input type="text" name="name" id="name">
+
             <label for="email">Email: </label>
             <input type="email" name="email" id="email">
+
             <br>
+
             <textarea placeholder="Type your message here..." name="message" id="message" cols="30" rows="10" required></textarea>
+
             <br>
+
+            <div id="error-msg"></div>
+
             <input type="submit" value="Send!">
         </form>
     </main>
