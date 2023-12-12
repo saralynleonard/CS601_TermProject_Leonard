@@ -26,7 +26,7 @@
             <h3>Scroll through some of my favorite photos:</h3>
             <section :key="galleryIndex" id="carousel">
                 <img :src="currentGalleryImage.image" alt="" />
-                <p>{{currentGalleryImage.text}}</p>
+                <p id="image-txt">{{currentGalleryImage.text}}</p>
             </section>
             <button @click="previousImage" :disabled="galleryIndex === 0" id="prev-btn">
                 <i class="fa-regular fa-chevron-left"></i>
