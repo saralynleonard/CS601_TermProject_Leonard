@@ -2,23 +2,23 @@
     {
         "project": {
             "title": "Simple Form Validation",
-            "description": "Built using HTML, CSS, and JavaScript.",
+            "description": "Built for CS 601 Assignment 4 using HTML, CSS, and JavaScript.",
             "url": "https://saralynleonard.github.io/CS601_HW4_Leonard/"
         }
         
     },
     {
         "project": {
-            "title": "Personal Website",
-            "description": "An old personal resume website built using HTML and CSS.",
-            "url": "https://saralynleonard.com/"
+            "title": "JSON and Fetch",
+            "description": "Built for CS 601 Assignment 5 using HTML, CSS, and JavaScript.",
+            "url": "https://saralynleonard.github.io/CS601_HW5_Leonard/"
         }
     },
     {
         "project": {
-            "title": "JSON and Fetch",
-            "description": "Built using HTML, CSS, and JavaScript.",
-            "url": "https://saralynleonard.github.io/CS601_HW5_Leonard/"
+            "title": "Personal Website",
+            "description": "An old personal resume website built using HTML and CSS.",
+            "url": "https://saralynleonard.com/"
         }
     }
 ]
